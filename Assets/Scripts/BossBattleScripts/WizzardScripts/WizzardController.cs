@@ -7,12 +7,14 @@ public class WizzardController : MonoBehaviour {
     public GameObject fireBall;
     public float fireBallImpulse = 5f;
     public float wizzardSpeed = 1f;
+    public GameObject spawnFire;
 
     float fraction = 0;
 
     public GameObject startNode;
     public GameObject[] nodes;
 
+    
     Vector3 posA;
     Vector3 posB;
     bool inMotion = false;
@@ -56,10 +58,10 @@ public class WizzardController : MonoBehaviour {
 
         }
     }
-    
+
     public void Attack()
     {
-        GameObject inst = Instantiate(fireBall, transform.position + transform.TransformDirection( new Vector3(0, 0, 2)), new Quaternion(0, 0, 0, 0));
+        GameObject inst = Instantiate(fireBall, spawnFire.transform.position + transform.TransformDirection( new Vector3(0, 0, 2)), new Quaternion(0, 0, 0, 0));
 
         inst.GetComponent<Rigidbody>().AddForce(transform.forward * fireBallImpulse, ForceMode.Impulse);
     }
