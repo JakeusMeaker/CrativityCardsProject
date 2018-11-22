@@ -13,6 +13,7 @@ public class StartLevel : MonoBehaviour {
 
     private void Start()
     {
+        source.Stop();
         wizzard.SetActive(false);
         winUI.SetActive(false);
     }

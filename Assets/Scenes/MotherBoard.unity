@@ -1951,16 +1951,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 114538890012936924, guid: c344646d3b374794aa2c826cfc190335,
-        type: 2}
-      propertyPath: exitDoor
-      value: 
-      objectReference: {fileID: 1484670858}
-    - target: {fileID: 114538890012936924, guid: c344646d3b374794aa2c826cfc190335,
-        type: 2}
-      propertyPath: healthImg
-      value: 
-      objectReference: {fileID: 1816230838}
     - target: {fileID: 114728103178985640, guid: c344646d3b374794aa2c826cfc190335,
         type: 2}
       propertyPath: player
@@ -2016,6 +2006,16 @@ Prefab:
       propertyPath: nodes.Array.data[8]
       value: 
       objectReference: {fileID: 1530973723}
+    - target: {fileID: 114538890012936924, guid: c344646d3b374794aa2c826cfc190335,
+        type: 2}
+      propertyPath: exitDoor
+      value: 
+      objectReference: {fileID: 1484670858}
+    - target: {fileID: 114538890012936924, guid: c344646d3b374794aa2c826cfc190335,
+        type: 2}
+      propertyPath: healthImg
+      value: 
+      objectReference: {fileID: 1816230838}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c344646d3b374794aa2c826cfc190335, type: 2}
   m_IsPrefabAsset: 0
