@@ -1,15 +1,25 @@
 fileFormatVersion: 2
-guid: 906bb491cf7859846bff2c00230e715f
+guid: 0770c1d48df4e844eba6e59f51a5ba69
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: joint1
+    100002: joint2
+    100004: joint3
+    100006: joint4
+    100008: pSphere1
+    100010: //RootNode
+    400000: joint1
+    400002: joint2
+    400004: joint3
+    400006: joint4
+    400008: pSphere1
+    400010: //RootNode
     2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCube1
-    2186277476908879412: ImportLogs
+    4300000: pSphere1
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: pSphere1
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -61,8 +71,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -87,7 +97,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
