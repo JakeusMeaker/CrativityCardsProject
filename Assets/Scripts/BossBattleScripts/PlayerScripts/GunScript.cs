@@ -10,6 +10,7 @@ public class GunScript : MonoBehaviour {
     public Camera fpsCam;
     public GameObject muzzleFlash;
     public GameObject impactEffect;
+    public Animator anim;
 
     float counter = 10;
 
@@ -24,7 +25,20 @@ public class GunScript : MonoBehaviour {
     {
         if (Input.GetButtonDown("Fire1"))
         {
+
+            if (anim != null)
+            {
+                anim.SetBool("Shoot", true);
+            }
             Shoot();
+        }
+
+        if (Input.GetButtonUp("Fire1"))
+        {
+            if (anim != null)
+            {
+                anim.SetBool("Shoot", false);
+            }
         }
 
         //Debug.Log(muzzleFlash.activeSelf);
@@ -53,6 +67,11 @@ public class GunScript : MonoBehaviour {
 
 
         RaycastHit hit;
+
+        if (anim != null)
+        {
+            anim.SetBool("Shoot", true);
+        }
 
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
