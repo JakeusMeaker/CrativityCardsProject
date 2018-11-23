@@ -7,12 +7,13 @@ public class StartLevel : MonoBehaviour {
     public GameObject doorEnter;
     public GameObject wizzard;
     public GameObject winUI;
-
+    public AudioSource source;
 
     bool started = false;
 
     private void Start()
     {
+        source.Stop();
         wizzard.SetActive(false);
         winUI.SetActive(false);
     }
@@ -27,6 +28,9 @@ public class StartLevel : MonoBehaviour {
 
             wizzard.SetActive(true);
             wizzard.transform.position = new Vector3(0, 10, 25);
+
+            source.Play();
+            source.loop = true;
         }
     }
 }
